@@ -7,7 +7,4 @@ app/Config/core.php
 
 app/Config/database.php
 
-
-app/tmp/cache/persistent/myapp_cake_core_cake_dev_pt-br
-
-app/tmp/cache/persistent/myapp_cake_core_file_map
+app/tmp/*
