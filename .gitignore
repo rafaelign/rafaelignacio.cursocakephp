@@ -10,3 +10,9 @@ app/Config/database.php
 app/tmp/*
 
 app/tmp/cache/*
+
+.htaccess
+
+app/.htaccess
+
+app/webroot/.htaccess
