@@ -41,7 +41,7 @@
         footer { 
             text-align: center;
         }
-        a.brand { color: #FFF !important; }
+        a.brand { color: #F55 !important; }
         div.box-img { text-align: center; }
     </style>
     <?php echo $this->Html->css('bootstrap-responsive.min'); ?>
