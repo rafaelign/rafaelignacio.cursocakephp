@@ -8,11 +8,6 @@
  * @author		  Ignácio, Rafael Crispim
  * @package       app.View.Pages
  */
-
-if (!Configure::read('debug')):
-	throw new NotFoundException();
-endif;
-App::uses('Debugger', 'Utility');
 ?>
 
 <!-- Main hero unit for a primary marketing message or call to action -->

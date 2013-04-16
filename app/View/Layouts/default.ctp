@@ -27,55 +27,40 @@
     <title>
         <?php echo $title_for_layout; ?>
     </title>
-    <?php #echo $this->Html->css('cake.generic'); ?>
     <?php echo $this->fetch('meta'); ?>
-    <?php echo $this->fetch('css'); ?>
 
     <!-- CSS -->
-    <?php echo $this->Html->css('bootstrap.min'); ?>
-    <style type="text/css">
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-        footer { 
-            text-align: center;
-        }
-        a.brand { color: #FFF !important; }
-        div.box-img { text-align: center; }
-    </style>
-    <?php echo $this->Html->css('bootstrap-responsive.min'); ?>
+    <?php echo $this->Html->css(array('bootstrap.min', 'main.css', 'bootstrap-responsive.min')); ?>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <?php echo $this->Html->meta('icon'); ?>
 </head>
 <body>
+    <!-- Navbar
+    ======================================================================= -->
     <?php echo $this->element('menu', array(
         'itensMenu'=>array(
-            array('href'=>'sobre-evento', 'icon'=>'icon-home', 'label'=>'Sobre o Evento'),
-            array('href'=>'como-chegar', 'icon'=>'icon-map-marker', 'label'=>'Como Chegar'),
+            array('href'=>array('controller'=>'pages', 'action'=>'display', 'home'), 'label'=>'Sobre o Evento'),
+            array('href'=>array('controller'=>'pages', 'action'=>'display', 'localizacao'), 'label'=>'Como Chegar'),
+            array('href'=>array('controller'=>'inscricoes', 'action'=>'inscrever'), 'label'=>'Inscrição'),
         ),
     )); ?>
+
+    <div id="header">
+        <?php echo $this->Html->image('header.png', array()); ?>
+    </div>
 
     <div class="container">
 
         <?php echo $this->element('msg-demo'); ?>
 
         <!-- Example row of columns -->
-        <div class="row">
+            <div class="row">
             <div class="span12">
                 <?php echo $this->Session->flash(); ?>
-                <div class="box-img">
-                    <img src="img/pti.png" class="img-rounded">
-                </div>
 
                 <hr />
                 <?php echo $this->fetch('content'); ?>
@@ -98,26 +83,8 @@
 
     </div> <!-- /container -->
 
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script-->
     <!-- Load JS Files -->
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <?php echo $this->Html->script('bootstrap.min'); ?>
+    <?php echo $this->Html->script(array('http://code.jquery.com/jquery-1.9.1.min.js', 'bootstrap.min', 'main.js')); ?>
     <!-- EOF Load JS Files -->
 </body>
 </html>
