@@ -49,17 +49,15 @@ footer {
 /* HEADER
 -------------------------------------------------- */
 #header {
-	background: #DDD;
+	background-image: -webkit-linear-gradient(top, #069, #38B 10%);
 	margin-bottom: 10px;
+    height: 300px;
 }
-.info-dont-panic {
-    position: absolute;
-    right: 7%;
-    bottom: 7%;
-    padding: 5px;
-}
-a.brand:first {
-	color: #FFF;
+.jumbotron {
+    color: #FFF;
+    position: relative;
+    top: 40%;
+    left: 9%;
 }
 /* MARKETING CONTENT
 -------------------------------------------------- */

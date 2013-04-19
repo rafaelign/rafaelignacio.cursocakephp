@@ -10,7 +10,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand btnToBox" href="#"><span class="serif">I</span> Debate Sobre Profissionais de TI</a>
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                 <div class="nav-collapse collapse">
                     <ul class="nav">

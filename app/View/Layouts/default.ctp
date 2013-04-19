@@ -50,7 +50,9 @@
     )); ?>
 
     <div id="header">
-        <?php echo $this->Html->image('header.png', array()); ?>
+        <span class="jumbotron">
+            <?php echo $this->Html->image('header.png', array()); ?>
+        </span>
     </div>
 
     <div class="container">
