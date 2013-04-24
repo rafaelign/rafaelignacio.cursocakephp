@@ -46,6 +46,8 @@
             array('href'=>array('controller'=>'pages', 'action'=>'display', 'home'), 'label'=>'Sobre o Evento'),
             array('href'=>array('controller'=>'pages', 'action'=>'display', 'localizacao'), 'label'=>'Como Chegar'),
             array('href'=>array('controller'=>'inscricoes', 'action'=>'inscrever'), 'label'=>'Inscrição'),
+            array('href'=>array('controller'=>'palestras', 'action'=>'index'), 'label'=>'Palestras'),
+            array('href'=>array('controller'=>'palestrantes', 'action'=>'index'), 'label'=>'Palestrantes'),
         ),
     )); ?>
 
