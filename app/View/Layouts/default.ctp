@@ -30,7 +30,7 @@
     <?php echo $this->fetch('meta'); ?>
 
     <!-- CSS -->
-    <?php echo $this->Html->css(array('bootstrap.min', 'main.css', 'bootstrap-responsive.min')); ?>
+    <?php echo $this->Html->css(array('bootstrap.min', 'main.css', 'bootstrap-responsive')); ?>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -43,11 +43,12 @@
     ======================================================================= -->
     <?php echo $this->element('menu', array(
         'itensMenu'=>array(
-            array('href'=>array('controller'=>'pages', 'action'=>'display', 'home'), 'label'=>'Sobre o Evento'),
-            array('href'=>array('controller'=>'pages', 'action'=>'display', 'localizacao'), 'label'=>'Como Chegar'),
-            array('href'=>array('controller'=>'inscricoes', 'action'=>'inscrever'), 'label'=>'Inscrição'),
-            array('href'=>array('controller'=>'palestras', 'action'=>'index'), 'label'=>'Palestras'),
-            array('href'=>array('controller'=>'palestrantes', 'action'=>'index'), 'label'=>'Palestrantes'),
+            array('href'=>array('controller'=>'pages', 'action'=>'display', 'home', 'painel'=>false), 'label'=>'Sobre o Evento'),
+            array('href'=>array('controller'=>'pages', 'action'=>'display', 'localizacao', 'painel'=>false), 'label'=>'Como Chegar'),
+            array('href'=>array('controller'=>'inscricoes', 'action'=>'inscrever', 'painel'=>false), 'label'=>'Inscrição'),
+            array('href'=>array('controller'=>'palestras', 'action'=>'index', 'painel'=>false), 'label'=>'Palestras'),
+            array('href'=>array('controller'=>'palestrantes', 'action'=>'index', 'painel'=>false), 'label'=>'Palestrantes'),
+            array('href'=>array('controller'=>'usuarios', 'action'=>'login', 'painel'=>true), 'label'=>'Painel'),
         ),
     )); ?>
 

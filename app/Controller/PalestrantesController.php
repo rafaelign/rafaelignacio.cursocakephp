@@ -6,6 +6,8 @@
  */
 class PalestrantesController extends AppController
 {
+    public $scaffold = 'painel';
+    
     public function index()
     {
         /** 

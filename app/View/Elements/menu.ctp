@@ -10,14 +10,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="brand btnToBox" href="#"><span class="serif">I</span> Debate Sobre Profissionais de TI</a>
+                <a class="brand btnToBox" href="#"><span class="serif">I</span> D.S.P. de TI</a>
                 <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
                 <div class="nav-collapse collapse">
-                    <ul class="nav">
+                    <ul class="nav pull-right">
                         <?php
                         if (isset($itensMenu) && !empty($itensMenu)) {
                             foreach($itensMenu as $item) {
                                 echo '<li>';
+
                                 echo $this->Html->link($item['label'], $item['href']);
                                 echo '</li>';
                             }

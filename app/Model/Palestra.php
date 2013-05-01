@@ -10,7 +10,7 @@ class Palestra extends AppModel
      * Parâmetros..
      */
     public $displayField = 'nome';
-    public $order = array('nome' => 'ASC');
+    public $order = array('Palestra.nome' => 'ASC');
 
     /**
      * Relacionamentos

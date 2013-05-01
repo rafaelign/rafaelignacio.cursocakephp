@@ -39,6 +39,7 @@
     Router::connect('/inscrever', array('controller' => 'inscricoes', 'action' => 'inscrever'));
     Router::connect('/palestras', array('controller' => 'palestras', 'action' => 'index'));
     Router::connect('/palestrantes', array('controller' => 'palestrantes', 'action' => 'index'));
+    Router::connect('/painel', array('controller' => 'inscricoes', 'action' => 'index', 'painel'=>true));
     Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.

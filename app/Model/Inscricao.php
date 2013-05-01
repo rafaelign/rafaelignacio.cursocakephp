@@ -9,8 +9,8 @@ class Inscricao extends AppModel
     /** 
      * Parâmetros..
      */
-    public $displayField    = 'nome';
-    public $order           = array('nome', 'ASC');
+    public $displayField = 'Inscricao.nome';
+    public $order = array('Inscricao.nome' => 'ASC');
 
     /**
      * Validações
